@@ -35,3 +35,14 @@
 .calculation-container{
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .all-cart{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        row-gap: 15px;
+    }
+    .container{
+        display: block;
+    }
+  }

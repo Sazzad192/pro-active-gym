@@ -19,7 +19,8 @@ const Calculation = (props) => {
         return second;
     }
 
-    const notify = () => toast("Wow so easy!");
+    //toast text show from here
+    const notify = () => toast("Congratulations, Your Workout is done for today!");
 
     return (
         <div className='position'>
