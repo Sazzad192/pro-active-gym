@@ -5,7 +5,7 @@
 .sub-details{
     display: flex;
     justify-content: space-around;
-    background-color: darksalmon;
+    background-color: #a9a9a9;
     border-radius: 10px;
     margin:30px;
     padding: 20px;
@@ -15,6 +15,11 @@
     background-color: #ffff;
     padding: 5px;
     border-radius: 5px;
+}
+
+.sub-details button:hover{
+    background: darksalmon;
+    color: #ffff;
 }
 
 .sub-details button{
@@ -32,9 +37,8 @@
 .time{
     display: flex;
     justify-content: space-between;
-    background-color: darksalmon;
+    background-color: #cecdcd;
     padding: 5px;
-    color: #ffff;
     margin: 10px;
     border-radius: 5px;
 }
