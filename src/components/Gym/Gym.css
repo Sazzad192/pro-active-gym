@@ -1,0 +1,53 @@
+.container{
+    display: grid;
+    grid-template-columns: 5fr 1fr; 
+}
+
+.cart-container{
+    background-color: aliceblue;
+    padding: 120px 60px 0 60px;
+}
+
+.cart-container header{
+    display: flex;
+}
+
+.cart-container header img{
+    height: 75px;
+    width: 150px;
+    padding-right: 10px;
+}
+
+.cart-container header h1{
+    color: darksalmon;
+}
+
+.cart-container h3{
+    padding: 20px 0 20px 0 ;
+}
+
+.all-cart{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    row-gap: 15px;
+}
+
+.calculation-container{
+    text-align: center;
+}
+.sub-details{
+    display: flex;
+    justify-content: space-around;
+    background-color: darksalmon;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+.sub-details h3{
+    background-color: #ffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.small{
+    font-size: small;
+}

@@ -1,0 +1,25 @@
+.sub-details{
+    display: flex;
+    justify-content: space-around;
+    background-color: darksalmon;
+    border-radius: 10px;
+    margin:30px;
+    padding: 20px;
+
+}
+.sub-details h3{
+    background-color: #ffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sub-details button{
+    border: 0px;
+    background-color: #ffff;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.small{
+    font-size: small;
+}

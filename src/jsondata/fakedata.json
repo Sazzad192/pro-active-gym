@@ -1,0 +1,56 @@
+[
+    {
+        "id" : "1",
+        "name": "Treadmeal",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam quod, natus est repellendus quo id delectus sequi optio aliquam!",
+        "age": "18-35",
+        "time": "120",
+        "img": "https://i.ibb.co/yVSx30Q/treadmeal.jpg"
+    },
+    
+    {
+        "id" : "2",
+        "name": "Freehand",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam quod, natus est repellendus quo id delectus sequi optio aliquam!",
+        "age": "18-45",
+        "time": "300",
+        "img": "https://i.ibb.co/NmznBJy/freehand.jpg"
+    },
+
+    {
+        "id" : "3",
+        "name": "Chin-up",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam quod, natus est repellendus quo id delectus sequi optio aliquam!",
+        "age": "18-40",
+        "time": "60",
+        "img": "https://i.ibb.co/KzHpGks/chinup.jpg"
+    },
+
+    {
+        "id" : "4",
+        "name": "Dumble",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam quod, natus est repellendus quo id delectus sequi optio aliquam!",
+        "age": "25-30",
+        "time": "30",
+        "img": "https://i.ibb.co/wRSRJFh/dumble-large.jpg"
+    },
+
+    {
+        "id" : "5",
+        "name": "Pushup",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam quod, natus est repellendus quo id delectus sequi optio aliquam!",
+        "age": "18-35",
+        "time": "60",
+        "img": "https://i.ibb.co/w03srXJ/pushup.jpg"
+    },
+
+    {
+        "id" : "6",
+        "name": "Cycling",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam quod, natus est repellendus quo id delectus sequi optio aliquam!",
+        "age": "18-45",
+        "time": "120",
+        "img": "https://i.ibb.co/TRNZr4m/cycling.jpg"
+    }
+    
+]
