@@ -1,5 +1,7 @@
 import React from 'react';
 import './Calculation.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Calculation = (props) => {
     const {exerciseTime} =props;
@@ -16,7 +18,8 @@ const Calculation = (props) => {
         localStorage.setItem('breakTime', second);
         return second;
     }
-    
+
+    const notify = () => toast("Wow so easy!");
 
     return (
         <div className='position'>
@@ -43,10 +46,10 @@ const Calculation = (props) => {
             <h3>Exercise Details</h3>
 
             <div className='time'> <h4>Exercise time</h4> <h4>{totalTime} sec</h4> </div>
-            <div className='time'> <h4>Break time</h4> <h4>{second} sec</h4> </div>
+            <div className='time'> <h4>Break time</h4> <h4>{} sec</h4> </div>
 
-            <button className='btn-acivity'>Activity Completed</button>
-                
+            <button className='btn-acivity' onClick={notify}>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };
