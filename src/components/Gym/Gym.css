@@ -35,19 +35,3 @@
 .calculation-container{
     text-align: center;
 }
-.sub-details{
-    display: flex;
-    justify-content: space-around;
-    background-color: darksalmon;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 20px;
-}
-.sub-details h3{
-    background-color: #ffff;
-    padding: 5px;
-    border-radius: 5px;
-}
-.small{
-    font-size: small;
-}

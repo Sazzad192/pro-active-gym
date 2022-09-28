@@ -1,9 +1,15 @@
 import React from 'react';
 import './Calculation.css';
 
-const Calculation = () => {
+const Calculation = (props) => {
+    const {exerciseTime} =props;
+
+    let totalTime = 0;
+    for(const time of exerciseTime){
+        totalTime = totalTime + parseInt(time.time);
+    }
     return (
-        <div>
+        <div className='position'>
             <header>
                 <h3>Name: K.M. SAZZADUL ISLAM</h3>
                 <p>Dhaka, Bangadesh</p>
@@ -24,9 +30,12 @@ const Calculation = () => {
                 <button>60 s</button>
             </div>
 
-            <div>
-                
-            </div>
+            <h3>Exercise Details</h3>
+
+            <div className='time'> <h4>Exercise time</h4> <h4>{totalTime} sec</h4> </div>
+            <div className='time'> <h4>Break time</h4> <h4>afasdf</h4> </div>
+
+            <button className='btn-acivity'>Activity Completed</button>
                 
         </div>
     );

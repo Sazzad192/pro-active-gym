@@ -6,12 +6,18 @@ import Calculation from '../Calculation/Calculation';
 
 const Gym = () => {
     const [exercise, setExercise] = useState([]);
+    const [exerciseTime, setExerciseTime] = useState([]);
 
     useEffect(() =>{
         fetch('fakedata.json')
         .then(res => res.json())
         .then(data => setExercise(data))
     },[])
+
+    const addList = (exercise) =>{
+        const newTime =[...exerciseTime, exercise];
+        setExerciseTime(newTime);
+    }
 
     return (
         <div className='container'>
@@ -27,13 +33,14 @@ const Gym = () => {
                     {
                         exercise.map(exercise => <Exercise 
                             key={exercise.id}
-                            exercise ={exercise}></Exercise>)
+                            exercise ={exercise}
+                            addList = {addList}></Exercise>)
                     }
                 </div>
             </div>
             <div className='calculation-container'>
 
-                <Calculation></Calculation>
+                <Calculation exerciseTime = {exerciseTime}></Calculation>
             </div>
         </div>
     );
