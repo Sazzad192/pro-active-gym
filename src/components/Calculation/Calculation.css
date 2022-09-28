@@ -17,12 +17,12 @@
     border-radius: 5px;
 }
 
-.sub-details button:hover{
+.sub-details p:hover{
     background: darksalmon;
     color: #ffff;
 }
 
-.sub-details button{
+.sub-details p{
     border: 0px;
     background-color: #ffff;
     padding: 5px;

@@ -8,6 +8,16 @@ const Calculation = (props) => {
     for(const time of exerciseTime){
         totalTime = totalTime + parseInt(time.time);
     }
+
+    
+    function btnBreak(peram){
+        const text = document.getElementById(peram);
+        const second = text.innerText;
+        localStorage.setItem('breakTime', second);
+        return second;
+    }
+    
+
     return (
         <div className='position'>
             <header>
@@ -24,16 +34,16 @@ const Calculation = (props) => {
             <h3>Add A Break</h3>
 
             <div className='sub-details'>
-                <button>15 s</button>
-                <button>30 s</button>
-                <button>45 s</button>
-                <button>60 s</button>
+                <p id='btn-break' onClick={()=>btnBreak('btn-break')}>15</p>
+                <p id='btn-break2' onClick={()=>btnBreak('btn-break2')}>30</p>
+                <p id='btn-break3' onClick={()=>btnBreak('btn-break3')}>45</p>
+                <p id='btn-break4' onClick={()=>btnBreak('btn-break4')}>60</p>
             </div>
 
             <h3>Exercise Details</h3>
 
             <div className='time'> <h4>Exercise time</h4> <h4>{totalTime} sec</h4> </div>
-            <div className='time'> <h4>Break time</h4> <h4>afasdf</h4> </div>
+            <div className='time'> <h4>Break time</h4> <h4>{second} sec</h4> </div>
 
             <button className='btn-acivity'>Activity Completed</button>
                 
