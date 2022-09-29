@@ -3,6 +3,7 @@ import './Gym.css';
 import logo from '../../picture/logo.jpg';
 import Exercise from '../Exercise/Exercise';
 import Calculation from '../Calculation/Calculation';
+import { getStored } from '../Calculation/LocalStorage/storage';
 
 const Gym = () => {
     const [exercise, setExercise] = useState([]);
@@ -12,6 +13,11 @@ const Gym = () => {
         fetch('fakedata.json')
         .then(res => res.json())
         .then(data => setExercise(data))
+    },[])
+
+    useEffect(()=>{
+        const storedTime = getStored();
+        console.log(storedTime)
     },[])
 
     const addList = (exercise) =>{

@@ -2,6 +2,7 @@ import React from 'react';
 import './Calculation.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { btnBreak } from './LocalStorage/storage';
 
 const Calculation = (props) => {
     const {exerciseTime} =props;
@@ -9,16 +10,6 @@ const Calculation = (props) => {
     let totalTime = 0;
     for(const time of exerciseTime){
         totalTime = totalTime + parseInt(time.time);
-    }
-
-    
-    function btnBreak(peram){
-        const text = document.getElementById(peram);
-        const second = text.innerText;
-        const setTime = document.getElementById('break-sec');
-        setTime.innerText = second + 'second';
-        localStorage.setItem('breakTime', second);
-        return second;
     }
 
     //toast text show from here
