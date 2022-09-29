@@ -15,6 +15,8 @@ const Calculation = (props) => {
     function btnBreak(peram){
         const text = document.getElementById(peram);
         const second = text.innerText;
+        const setTime = document.getElementById('break-sec');
+        setTime.innerText = second + 'second';
         localStorage.setItem('breakTime', second);
         return second;
     }
@@ -46,8 +48,8 @@ const Calculation = (props) => {
 
             <h3>Exercise Details</h3>
 
-            <div className='time'> <h4>Exercise time</h4> <h4>{totalTime} sec</h4> </div>
-            <div className='time'> <h4>Break time</h4> <h4>{} sec</h4> </div>
+            <div className='time'> <h4>Exercise time</h4> <h4>{totalTime} second</h4> </div>
+            <div className='time'> <h4>Break time</h4> <h4 id='break-sec'> 0 second</h4> </div>
 
             <button className='btn-acivity' onClick={notify}>Activity Completed</button>
             <ToastContainer />
