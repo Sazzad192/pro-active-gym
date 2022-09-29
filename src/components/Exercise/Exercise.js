@@ -14,7 +14,6 @@ const Exercise = (props) => {
                 <p>Time required: <span>{time}</span> s</p>
                 <button onClick={() => addList(props.exercise)}>Add to list</button>
             </div>
-            
         </div>
     );
 };
